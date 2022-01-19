@@ -13,7 +13,17 @@
 
 ## How to do this test
 
-* Fork this project
+* Duplicate this repository. **Don't fork it**
+
+  ```
+  $ git clone --bare git@github.com:LivePreso/app-developer-test.git
+  $ cd app-developer-test.git
+  $ git push --mirror git@github.com:youruser/lp-app-dev-test.git
+  ```
+
+  Note: you'll have to create the respository on github before you can push to it. You can now clone your repo and work on it from
+  here.
+
 * Edit the src/*.js files to fix the solutions
 * Commit and push your changes
 * Send us a link to the repo
