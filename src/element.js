@@ -14,8 +14,6 @@ export class Element {
   render() {
     const div = document.createElement("div");
     this.el = div;
-    div.addEventListener("click", function() {
-      this.removeElement();
-    });
+    div.addEventListener("click", this.removeElement);
   }
 }
