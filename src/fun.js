@@ -6,6 +6,16 @@
  * @param {number} num
  */
 export function livePresoGame(num) {
-  return num;
+  let returnString = "";
+
+  if (num % 2 == 0) {
+    returnString += "Live";
+  }
+
+  if (num % 3 == 0) {
+    returnString += "Preso";
+  }
+
+  return (returnString !== "" ? returnString : num);
 }
 
