@@ -15,9 +15,9 @@ export default class Request {
     return fetch(url);
   }
 
-  requestAll() {
+  async requestAll() {
     for (let i = 1; i <= 10; i++) {
-      this.get(`http://fakeurl.com/api/v1/endpoint/${i}/`);
+      await this.get(`http://fakeurl.com/api/v1/endpoint/${i}/`);
     }
 
     return this._requests;
